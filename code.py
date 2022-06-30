@@ -246,7 +246,7 @@ class DisplayCallback(tf.keras.callbacks.Callback):
 base_log_path = r"C:\Users\Ryzen\Documents\tensorflow\GitHub\Project-4-Image-Segmentation-on-Cell-Nuclei\tb_logs"
 log_dir = os.path.join(base_log_path, datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + '__Project_4')
 tb = tf.keras.callbacks.TensorBoard(log_dir,histogram_freq=1,profile_batch=0)
-es = tf.keras.callbacks.EarlyStopping(monitor='val_loss',patience=10,verbose=1)
+es = tf.keras.callbacks.EarlyStopping(monitor='val_loss',patience=10,verbose=0)
 
 #%%
 #4. Start to do training
